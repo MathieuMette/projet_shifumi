@@ -7,6 +7,7 @@
 body {
     background-color: #FAF3DD;
     font-family: 'Montserrat', 'sans-serif';
+    height: 100vh;
 }
 /* Header */
 header {
@@ -57,7 +58,6 @@ header {
         width : 8vw;
         height : 10vh;
     }
-
     /* Computer */
     #scoreBarComputer {
         display: flex;
@@ -106,6 +106,11 @@ header {
         flex-direction: column;
         color: #707070;
         font-size: 1.2rem;
+    }
+    #game {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     /* User */
     .handGame.user {
@@ -160,39 +165,86 @@ header {
         width: 8vw;
     }
 
-@media screen and (max-width: 992px) {
-    #textHand {
-        display: none;
+    @media screen and (max-width: 992px) {
+        /* Header */
+        header {
+            padding: 0.3rem;
+        }
+        #logoHeader {
+            height:7vh;
+        }
+        /* Score Bar */
+            /* User */
+            #scoreBarUser {
+                justify-content: center;
+            }
+            #imgAvatarUser {
+                max-height: 12vh;
+            }
+            #scoreUser {
+                font-size: 2rem;
+                width : 15vw;
+                height : 10vh;
+            }
+            /* Computer */
+            #scoreBarComputer {
+                position: fixed;
+                bottom: 1rem;
+                justify-content: center;
+            }
+            #imgAvatarComputer {
+                max-height: 12vh;
+            }
+            #scoreComputer {
+                font-size: 2rem;
+                width : 15vw;
+                height : 10vh;
+            }
+        /* Zone de jeux */
+        #zoneGame {
+            margin-top: 0;
+        }
+        .textHand {
+            display: none;
+        }
+        .handGame.user {
+            flex-direction: row;
+            border: 0.2rem solid #707070;
+
+        }
+        .iconSheetUser, .iconCisorUser {
+            transform: rotate(180deg);
+            height: 15vh;
+            width: 8vw;
+        }
+        .iconStoneUser {
+            transform: rotate(180deg);
+            height: 13vh;
+            width: 10vw;
+        }
+        .handGame.computer {
+            flex-direction: row;
+            border: 0.2rem solid #707070;
+        }
+        .iconSheetComputer, .iconCisorComputer {
+            transform: rotate(0deg);
+            height: 15vh;
+            width: 8vw;
+            margin-right: 1rem;
+        }
+        .iconStoneComputer {
+            transform: rotate(0deg);
+            height: 13vh;
+            width: 8vw;
+        }
+        /* Tapis de jeux */
+        .playMat {
+            height: 30vh;
+            width: 100%;
+            border: 0.5rem solid #FFA69E;
+            margin-top: 0.7rem;
+            margin-bottom: 0.7rem;
+        }
     }
-    .handGame.user {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        border: 0.5rem solid #707070;
-        border-radius: 2rem;
-    }
-    .iconSheetUser, .iconCisorUser {
-        transform: rotate(180deg);
-        height: 15vh;
-        width: 8vw;
-    }
-    .iconStoneUser {
-        transform: rotate(180deg);
-        height: 13vh;
-        width: 8vw;
-        margin-left: 1rem;
-    }
-    .iconSheetComputer, .iconCisorComputer {
-        transform: rotate(0deg);
-        height: 15vh;
-        width: 8vw;
-        margin-right: 1rem;
-    }
-    .iconStoneComputer {
-        transform: rotate(0deg);
-        height: 13vh;
-        width: 8vw;
-    }
-}
+    
 
