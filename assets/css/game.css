@@ -134,6 +134,19 @@ header {
         margin-left: 1rem;
         cursor: pointer;
     }
+    /* .iconStoneUser:hover {
+        animation: deplacement 1s linear;
+    }
+    @keyframes deplacement {
+        from {
+            transform : rotate(90deg) translateY(0);
+        }
+        to {
+            transform : rotate(90deg) translateY(-200px);
+        }
+    } */
+
+
     /* Tapis de Jeux */
     #playMat {
         display: flex;
@@ -155,12 +168,16 @@ header {
         display: none;
         justify-content: center;
     }
+
+    /* #feuilleUser, #ciseauxComputer {
+        display : flex;
+    } */
         /* Partie User */
         #feuilleUser>img, #pierreUser>img, #ciseauxUser>img {
             transform: rotate(90deg);
             height: 22vh;
         }
-        .userActive, .computerActive {
+        .active {
             display: flex;
         }
 
