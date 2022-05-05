@@ -44,3 +44,15 @@
 //     alert('Paramétrer les cookies' + '\n' + imgCookies);
 // })
 
+var woman1 = document.querySelector('#woman1')
+var woman2 = document.querySelector('#woman2')
+var woman3 = document.querySelector('#woman3')
+var man1 = document.querySelector('#man1')
+var man2 = document.querySelector('#man2')
+var man3 = document.querySelector('#man3')
+var avatar = document.querySelector('.avatar')
+
+woman1.addEventListener('click', function() {
+    (woman2,woman3,man1,man2,man3).style.visibility = 'hidden';
+})
+    
