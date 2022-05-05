@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sacramento&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: #FAF3DD;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+#logoHeader {
+    height:10vh;
+}
