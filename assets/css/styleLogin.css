@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #FAF3DD;
+    background-color: #B8F2E6;
     font-family: 'Montserrat', 'sans-serif';
     height: 100vh;
 }
@@ -21,7 +21,7 @@ body {
     padding: 2rem;
 }
 #logoHeader {
-    height:20vh;
+    height:16vh;
 }
 
 
@@ -43,12 +43,12 @@ body {
 
 
 .chooseAvatar label,.choosePseudo,#ok {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 #choosePseudo {
-    border: 0.2rem solid #FFA69E;
+    border: 0.1rem solid #FFA69E;
     border-radius: 20px;
 }
 
@@ -62,7 +62,19 @@ body {
     height: 130px;
     flex-direction: row;
     margin: 0 -18px;
+    transition: all 0.7s;
+    visibility: visible;
 }
+
+.avatar:hover {
+    display : flex;
+    height: 150px;
+    flex-direction: row;
+    margin: -10px 18px -10px 18px;
+    transition: all 0.7s;
+}
+
+
 
 /* bouton GO */
 
