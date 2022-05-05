@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FAF3DD;
+}
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+#logoHeader {
+    height:10vh;
+}
+
+/* Score Bar */
+    /* USER */
+    #scoreBarUser {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #avatarUser {
+        transform: translateX(0.5rem);
+    }
+    #imgAvatarUser {
+        background-color: #FAF3DD;
+        border: 0.2rem solid #FFA69E;
+        border-radius: 50%;
+        max-height: 15vh;
+    }
+    #nameUser {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0.8rem;
+        background-color: #FFA69E;
+        color: #fff;
+        width : 40vw;
+        height : 5vh;
+    }
+    #scoreUser {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 0.2rem solid #FFA69E;
+        border-radius: 1rem;
+        font-size: 3rem;
+        color: #707070;
+        width : 8vw;
+        height : 10vh;
+    }
+
+    /* Computer */
+    #scoreBarComputer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #avatarComputer {
+        transform: translateX(-0.5rem);
+    }
+    #imgAvatarComputer {
+        background-color: #FAF3DD;
+        border: 0.2rem solid #AED9E0;
+        border-radius: 50%;
+        max-height: 15vh;
+    }
+    #nameComputer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.8rem;
+        background-color: #AED9E0;
+        color: #fff;
+        width : 40vw;
+        height : 5vh;
+    }
+    #scoreComputer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 0.2rem solid #AED9E0;
+        border-radius: 1rem;
+        font-size: 3rem;
+        color: #707070;
+        width : 8vw;
+        height : 10vh;
+    }
+
+/* Zone de Jeux */
+    /* Text jeux */
+    .textHand {
+        display: flex;
+        flex-direction: column;
+        color: #707070;
+        font-size: 1.2rem;
+    }
+    .handGame {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        border: 0.5rem solid #707070;
+        border-radius: 2rem;
+        padding-right: 2rem;
+        padding-left: 4rem;
+        margin-right: 2rem;
+    }
+    .iconSheetUser, .iconCisorUser {
+        transform: rotate(90deg);
+        height: 15vh;
+    }
+    .iconStoneUser {
+        transform: rotate(90deg);
+        height: 13vh;
+    }
