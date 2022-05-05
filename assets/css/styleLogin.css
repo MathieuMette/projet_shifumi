@@ -3,19 +3,76 @@
 * {
     margin: 0;
     padding: 0;
-
 }
+
 body {
     background-color: #FAF3DD;
+    font-family: 'Montserrat', 'sans-serif';
+    height: 100vh;
 }
 
-/* Header */
-header {
+/* container du centre (formulaire) */
+
+.PageLogin {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
 }
 #logoHeader {
-    height:10vh;
+    height:20vh;
+}
+
+
+
+/* input pseudo */
+
+
+#choosePseudo {
+    margin: 0;
+    /* font-family: inherit;
+    font-size: inherit;
+    line-height: inherit; */
+    padding: 3px;
+    text-align: center;
+}
+        
+
+/* choisir avatar */
+
+
+.chooseAvatar label,.choosePseudo,#ok {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#choosePseudo {
+    border: 0.2rem solid #FFA69E;
+    border-radius: 20px;
+}
+
+.listAvatar {
+    display: flex;
+    /* margin: 15px auto; */
+}
+
+.avatar {
+    display : flex;
+    height: 130px;
+    flex-direction: row;
+    margin: 0 -18px;
+}
+
+/* bouton GO */
+
+#ok {
+    font-size : auto;
+    background-color: #FFA69E;
+    color: #fff;
+    border: 0px solid #fff;
+    border-radius: 50%;
+    font-weight: 400;
+    height: 5rem;
+    width: 5rem;
 }
