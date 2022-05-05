@@ -14,6 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
         <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9c79bb18d6.js" crossorigin="anonymous" defer></script>
+        <!-- Perso -->
+    <script src="assets/js/game.js" defer></script>
     <!-- Titre Page -->
     <title>Shifumi - Page jeux</title>
 </head>
@@ -95,7 +97,34 @@
                 </div>
                 <!-- Tapis de jeux -->
                 <div class="col-8 offset-2 col-lg-6 offset-lg-0" id="playMat">
-                    <div class="playMat"></div>
+                    <div class="playMat">
+                        <div class="row inGame">
+                            <!-- Jeux USer -->
+                            <div class="col-6 gameUser">
+                                <div id="feuilleUser">
+                                    <img src="assets/img/feuille.svg" class="img-fluid">
+                                </div>
+                                <div id="pierreUser">
+                                    <img src="assets/img/pierre.svg" class="img-fluid">
+                                </div>
+                                <div id="ciseauxUser">
+                                    <img src="assets/img/ciseaux.svg" class="img-fluid">
+                                </div>
+                            </div>
+                            <!-- Jeux computer -->
+                            <div class="col-6 gameComputer">
+                                <div id="feuilleComputer">
+                                    <img src="assets/img/feuille.svg" class="img-fluid">
+                                </div>
+                                <div id="pierreComputer">
+                                    <img src="assets/img/pierre.svg" class="img-fluid">
+                                </div>
+                                <div id="ciseauxComputer">
+                                    <img src="assets/img/ciseaux.svg" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Mains computer -->
                 <div class="col-8 offset-2 col-lg-3 offset-lg-0 handGame computer">
