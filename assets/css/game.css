@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sacramento&display=swap%27');
+
 * {
     margin: 0;
     padding: 0;
 }
 body {
     background-color: #FAF3DD;
+    font-family: 'Montserrat', 'sans-serif';
 }
 /* Header */
 header {
@@ -95,9 +98,7 @@ header {
 
 /* Zone de Jeux */
 #zoneGame {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 2rem;
 }
     /* Text jeux */
     .textHand {
@@ -114,7 +115,6 @@ header {
         align-items: center;
         border: 0.5rem solid #707070;
         border-radius: 2rem;
-        margin-right: 2rem;
     }
     .iconSheetUser, .iconCisorUser {
         transform: rotate(90deg);
@@ -127,9 +127,14 @@ header {
         width: 8vw;
         margin-left: 1rem;
     }
+    /* Tapis de Jeux */
+    #playMat {
+        display: flex;
+        justify-content:center;
+    }
     .playMat {
         height: 50vh;
-        width: 100%;
+        width: 80%;
         border: 0.8rem solid #FFA69E;
         border-radius: 4rem;
     }
@@ -141,7 +146,6 @@ header {
         align-items: center;
         border: 0.5rem solid #707070;
         border-radius: 2rem;
-        margin-left: 2rem;
     }
     .iconSheetComputer, .iconCisorComputer {
         transform: rotate(-90deg);
@@ -155,4 +159,40 @@ header {
         height: 13vh;
         width: 8vw;
     }
+
+@media screen and (max-width: 992px) {
+    #textHand {
+        display: none;
+    }
+    .handGame.user {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: 0.5rem solid #707070;
+        border-radius: 2rem;
+    }
+    .iconSheetUser, .iconCisorUser {
+        transform: rotate(180deg);
+        height: 15vh;
+        width: 8vw;
+    }
+    .iconStoneUser {
+        transform: rotate(180deg);
+        height: 13vh;
+        width: 8vw;
+        margin-left: 1rem;
+    }
+    .iconSheetComputer, .iconCisorComputer {
+        transform: rotate(0deg);
+        height: 15vh;
+        width: 8vw;
+        margin-right: 1rem;
+    }
+    .iconStoneComputer {
+        transform: rotate(0deg);
+        height: 13vh;
+        width: 8vw;
+    }
+}
 
