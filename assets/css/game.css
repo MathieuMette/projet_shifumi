@@ -134,17 +134,6 @@ header {
         margin-left: 1rem;
         cursor: pointer;
     }
-    /* .iconStoneUser:hover {
-        animation: deplacement 1s linear;
-    }
-    @keyframes deplacement {
-        from {
-            transform : rotate(90deg) translateY(0);
-        }
-        to {
-            transform : rotate(90deg) translateY(-200px);
-        }
-    } */
 
 
     /* Tapis de Jeux */
@@ -302,7 +291,7 @@ header {
     
 
 /* Modal */
-.mm-modal {
+/* .mm-modal {
     position : fixed;
     top: 36.5vh;
     left: 34vw;
@@ -317,17 +306,46 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
+} */
 /* Win */
-#modalWin {
+/* #modalWin {
     background-image: url(/assets/img/pouce_win.png);
     visibility: hidden;
-}
+} */
 /* Loose */
-#modalLoose {
+/* #modalLoose {
     background-image: url(/assets/img/pouce_loose.png);
     visibility: hidden;
 }
 #modalEgal {
     visibility: hidden;
+} */
+
+.modal-content {
+    border: none;
+    border-radius: 2rem;
+}
+.modal-header {
+    border: none;
+}
+.btn-close { 
+    margin: 1rem;
+}
+.modal-body {
+    text-align: center;
+    font-size: 4rem;
+}
+.imgModal { 
+    height: 15rem;
+}
+
+/* Win */
+.modal-content.win { 
+    background-color: #FFA69E !important;
+}
+.modal-content.loose { 
+    background-color: #AED9E0 !important;
+}
+.modal-content.egal { 
+    background-color: #FAF3DD !important;
 }

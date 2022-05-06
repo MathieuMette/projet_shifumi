@@ -146,57 +146,77 @@
             </div>
         </section>
         <!-- Modal Win -->
-        <section class="modal-dialog mm-modal win text-center" id="modalWin">
+        <!-- <section class="modal-dialog mm-modal win text-center" id="modalWin">
             Tu as gagné
-        </section>
+        </section> -->
         <!-- Modal Loose -->
-        <section class="modal-dialog mm-modal loose text-center" id="modalLoose">
+        <!-- <section class="modal-dialog mm-modal loose text-center" id="modalLoose">
             Tu as perdu
-        </section>
+        </section> -->
         <!-- Modal égalité -->
-        <section class="modal-dialog mm-modal egal text-center" id="modalEgal">
+        <!-- <section class="modal-dialog mm-modal egal text-center" id="modalEgal">
             Égalité
-        </section>
+        </section> -->
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-            Launch static backdrop modal
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropWin">
+            Test
         </button>
         
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Modal - Win -->
+        <div class="modal fade" id="staticBackdropWin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content win">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textModal">
+                            C'est Gagné
+                        </div> 
+                        <div class="imgModal">
+                            <img src="assets/img/pouce_win.png" class="img-fluid imgModal"  >
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
-                </div>
-            </div>
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Modal - Loose -->
+        <div class="modal fade" id="staticBackdropLoose" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content loose">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textModal">
+                            C'est Perdu
+                        </div> 
+                        <div class="imgModal">
+                            <img src="assets/img/pouce_loose.png" class="img-fluid imgModal"  >
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
-                </div>
-            </div>
             </div>
         </div>
+        <!-- Modal - Egalite -->
+        <div class="modal fade" id="staticBackdropEgal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content egal">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textModal">
+                            Égalité
+                        </div> 
+                        <div class="imgModal">
+                            <img src="assets/img/pouce_loose.png" class="img-fluid imgModal"  >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
