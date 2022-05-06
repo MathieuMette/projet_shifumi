@@ -1,4 +1,4 @@
-// REcupération donnée page Login
+// Recupération donnée page Login
 var nameUser = document.getElementById('nameUser');
 var imgAvatarUser = document.getElementById('imgAvatarUser');
 var pseudo = localStorage.getItem('choosePseudo');

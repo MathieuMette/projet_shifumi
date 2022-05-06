@@ -207,6 +207,8 @@ header {
             /* User */
             #scoreBarUser {
                 justify-content: center;
+                position: fixed;
+                bottom: 1rem;
             }
             #imgAvatarUser {
                 max-height: 12vh;
@@ -216,10 +218,11 @@ header {
                 width : 15vw;
                 height : 10vh;
             }
+            #nameUser {
+                font-size: 1rem;
+            }
             /* Computer */
             #scoreBarComputer {
-                position: fixed;
-                bottom: 1rem;
                 justify-content: center;
             }
             #imgAvatarComputer {
@@ -229,6 +232,9 @@ header {
                 font-size: 2rem;
                 width : 15vw;
                 height : 10vh;
+            }
+            #nameComputer {
+                font-size: 1rem;
             }
         /* Zone de jeux */
         #zoneGame {
@@ -244,12 +250,12 @@ header {
 
         }
         .iconSheetUser, .iconCisorUser {
-            transform: rotate(180deg);
+            transform: rotate(0deg);
             height: 15vh;
             width: 8vw;
         }
         .iconStoneUser {
-            transform: rotate(180deg);
+            transform: rotate(0deg);
             height: 13vh;
             width: 10vw;
         }
@@ -259,13 +265,13 @@ header {
             border: 0.2rem solid #707070;
         }
         .iconSheetComputer, .iconCisorComputer {
-            transform: rotate(0deg);
+            transform: rotate(180deg);
             height: 15vh;
             width: 8vw;
             margin-right: 1rem;
         }
         .iconStoneComputer {
-            transform: rotate(0deg);
+            transform: rotate(180deg);
             height: 13vh;
             width: 8vw;
         }
