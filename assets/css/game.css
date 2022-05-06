@@ -34,7 +34,7 @@ header {
         background-color: #FAF3DD;
         border: 0.2rem solid #FFA69E;
         border-radius: 50%;
-        max-height: 15vh;
+        max-height: 20vh;
     }
     #nameUser {
         display: flex;
@@ -44,7 +44,7 @@ header {
         background-color: #FFA69E;
         color: #fff;
         width : 40vw;
-        height : 5vh;
+        height : 6vh;
     }
     #scoreUser {
         display: flex;
@@ -71,7 +71,7 @@ header {
         background-color: #FAF3DD;
         border: 0.2rem solid #AED9E0;
         border-radius: 50%;
-        max-height: 15vh;
+        max-height: 20vh;
     }
     #nameComputer {
         display: flex;
@@ -81,7 +81,7 @@ header {
         background-color: #AED9E0;
         color: #fff;
         width : 40vw;
-        height : 5vh;
+        height : 6vh;
     }
     #scoreComputer {
         display: flex;
@@ -290,6 +290,7 @@ header {
 .modal-content {
     border: none;
     border-radius: 2rem;
+    opacity: 0.7;
 }
 .modal-header {
     border: none;

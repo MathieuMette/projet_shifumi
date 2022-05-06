@@ -81,10 +81,10 @@ sheetUser.addEventListener('click', function(){
             ciseauxComputer.style.display = 'none';
         })
     } else if (choixOrdiName == 'Pierre') { 
-        modalWin.classList.add('show');
+        $('#staticBackdropWin').modal('show');
         compteurUser++;
         scoreUser.innerHTML = compteurUser;
-                var closeButtonWin = document.querySelector('#closeButtonWin');
+        var closeButtonWin = document.querySelector('#closeButtonWin');
         closeButtonWin.addEventListener('click', function() { 
             console.log('fermeture modal');
             stoneUser.style.opacity = 1;
