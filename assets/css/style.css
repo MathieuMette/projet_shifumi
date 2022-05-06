@@ -1,0 +1,116 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sacramento&display=swap%27');
+
+ body {
+    background-color : #AED9E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.logoImg {
+    position:absolute;
+    width: 20%;
+    margin-top: -7vh;
+    z-index: 0;
+}
+
+.startBtn {
+    z-index:1;
+    position: absolute;
+    margin-top: 20vh;
+    color: #FFA69E;
+    display:block;
+    font-size: 1rem;
+    font-family: montserrat;
+    border-radius: 25px;
+    border: solid 1px #D94E3B;
+    background:whitesmoke;
+    padding:20px 30px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-box-shadow: 0px 9px 0px #FFA69E;
+    -moz-box-shadow: 0px 9px 0px #FFA69E;
+    box-shadow: 0px 9px 0px #FFA69E;
+}
+
+.startBtn:active{
+    -webkit-box-shadow: 0px 2px 0px #FFA69E;
+    -moz-box-shadow: 0px 2px 0px #FFA69E;
+    box-shadow: 0px 2px 0px #FFA69E;
+    position:absolute;
+}
+
+
+
+
+.img-circle-hands {
+    width: 50%;
+    object-fit: cover;   
+}
+
+.img-circle-hands:hover {
+    animation: animate 60s 1 linear; 
+   }  
+
+
+    
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(260deg);
+    }
+}
+
+
+
+/* ipad */
+@media screen and (min-width: 800px) and (max-width: 1500px) {
+
+    .img-circle-hands {
+        width: 100%;
+        object-fit: cover;
+        
+    }
+
+    .logoImg {
+        width: 50%;
+    }
+    
+}
+
+
+/* mobile */
+@media screen and (max-width: 800px) {
+
+    .img-circle-hands {
+        width: 80%;
+        object-fit: cover;
+        
+    }
+
+    .logoImg {
+        width: 50%;
+        margin-top: -3vh;
+    }
+
+    .startBtn {
+        margin-top: 12vh;
+        font-size: 10px;
+        padding: 11px 18px;
+
+    }
+}
+
+
+
+
+
+
+
