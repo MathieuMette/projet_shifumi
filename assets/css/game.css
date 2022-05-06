@@ -45,6 +45,7 @@ header {
         color: #fff;
         width : 40vw;
         height : 6vh;
+        font-size: 2rem;
     }
     #scoreUser {
         display: flex;
@@ -82,6 +83,7 @@ header {
         color: #fff;
         width : 40vw;
         height : 6vh;
+        font-size: 2rem;
     }
     #scoreComputer {
         display: flex;
