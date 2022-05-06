@@ -97,7 +97,7 @@ body {
 
 .avatar.inactive {
     display : flex;
-    height: 130px;
+    height: 110px;
     flex-direction: row;
     margin: 0 -16px;
     transition: all 0.7s;
@@ -119,9 +119,9 @@ body {
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     transition: all 0.1s;
-    -webkit-box-shadow: 0px 9px 0px #ffffff;
-    -moz-box-shadow: 0px 9px 0px #ffffff;
-    box-shadow: 0px 9px 0px #ffffff;
+    -webkit-box-shadow: 2px 9px 0px #ffffff;
+    -moz-box-shadow: 2px 9px 0px #ffffff;
+    box-shadow: 2px 9px 0px #ffffff;
 }
 
 #ok:active {
