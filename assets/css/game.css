@@ -303,3 +303,30 @@ header {
     }
     
 
+/* Modal */
+.mm-modal {
+    position : fixed;
+    top: 36.5vh;
+    left: 34vw;
+    height: 50vh;
+    width: 32vw;
+    border-radius: 4rem;
+    background-color: #fff;
+    background-size: contain;
+    opacity: 0.8;
+    padding: 4rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* Win */
+.mm-modal.win {
+    background-image: url(/assets/img/pouce_win.png);
+    display: none;
+}
+/* Loose */
+.mm-modal.loose {
+    background-image: url(/assets/img/pouce_loose.png);
+    display: none;
+}

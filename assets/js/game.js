@@ -67,3 +67,5 @@ cisorComputer.addEventListener('click', function(){
     pierreComputer.style.display = 'none';
     ciseauxComputer.style.display = 'flex';
 })
+
+
