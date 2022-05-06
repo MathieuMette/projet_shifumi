@@ -201,13 +201,11 @@ header {
         height: 15vh;
         width: 8vw;
         margin-right: 1rem;
-        cursor: pointer;
     }
     .iconStoneComputer {
         transform: rotate(-90deg);
         height: 13vh;
         width: 8vw;
-        cursor: pointer;
     }
 
     @media screen and (max-width: 992px) {
@@ -321,12 +319,15 @@ header {
     align-items: flex-end;
 }
 /* Win */
-.mm-modal.win {
+#modalWin {
     background-image: url(/assets/img/pouce_win.png);
-    display: none;
+    visibility: hidden;
 }
 /* Loose */
-.mm-modal.loose {
+#modalLoose {
     background-image: url(/assets/img/pouce_loose.png);
-    display: none;
+    visibility: hidden;
+}
+#modalEgal {
+    visibility: hidden;
 }
