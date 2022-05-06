@@ -14,5 +14,4 @@ function chooseAvatar () {
     // } else {
     //     woman1.classList.add('.inactive');
     // }
-}
-
+})}}
