@@ -18,9 +18,9 @@ var pierreComputer = document.getElementById('pierreComputer');
 var cisorComputer = document.getElementById('cisorComputer');
 var ciseauxComputer = document.getElementById('ciseauxComputer')
 // Modal
-var modalWin = document.getElementById('modalWin');
-var modalLoose = document.getElementById('modalLoose')
-var modalEgal = document.getElementById('modalEgal')
+var modalWin = document.getElementById('staticBackdropWin');
+var modalLoose = document.getElementById('staticBackdropLoose')
+var modalEgal = document.getElementById('staticBackdropEgal')
 
 scoreUser.innerHTML = compteurUser;
 scoreComputer.innerHTML = compteurComputer;
@@ -61,17 +61,16 @@ sheetUser.addEventListener('click', function(){
     }
     // Choix gagnant
     if (choixOrdiName == 'Ciseaux') {
-        modalLoose.classList.add('show');;
+        // modalLoose.classList.add('show');
         compteurComputer++;
         scoreComputer.innerHTML = compteurComputer;
     } else if (choixOrdiName == 'Pierre') { 
-        modalWin.classList.add('show');
+        // modalWin.classList.add('show');
         compteurUser++;
         scoreUser.innerHTML = compteurUser;
     } else { 
-        modalEgal.classList.add('show');;
+        // modalEgal.classList.add('show');
     }
-
 })
 // Pierre
 stoneUser.addEventListener('click', function(){
