@@ -80,7 +80,7 @@ body {
 
 .avatar:hover {
     display : flex;
-    height: 150px;
+    height: 160px;
     flex-direction: row;
     margin: -10px 16px;
     transition: all 0.7s;
@@ -88,9 +88,9 @@ body {
 
 .avatar.active {
     display : flex;
-    height: 150px;
+    height: 180px;
     flex-direction: row;
-    margin: -10px 16px;
+    margin: -20px 16px;
     transition: all 0.7s;
 }
 
