@@ -21,7 +21,9 @@
 </head>
 <body>
     <header>
-        <img src="assets/img/logo_shifumi.png" class="img-fluid" id="logoHeader">
+        <a href="index.html">
+            <img src="assets/img/logo_shifumi.png" class="img-fluid" id="logoHeader">
+        </a>
     </header>
     <main class = "container">
         <!-- Score Bar -->
@@ -39,14 +41,14 @@
                     </div>
                     <!-- Score User -->
                     <div id="scoreUser">
-                        0
+                        
                     </div>
                 </div>
                 <!-- Score Bar Computer -->
                 <div class="col-12 col-lg-6" id="scoreBarComputer">
                     <!-- Score Computer -->
                     <div id="scoreComputer">
-                        0
+                        
                     </div>
                     <!-- Nom Computer -->
                     <div id="nameComputer">
@@ -83,7 +85,7 @@
                 <!-- Mains User -->
                 <div class="col-8 offset-2 col-lg-3 offset-lg-0 handGame user">
                     <!-- Feuille -->
-                    <div id="sheetUser">
+                    <div id="sheetUser" data-bs-toggle="modal">
                         <img src="assets/img/feuille.svg" class="img-fluid iconSheetUser ms-4">
                     </div>
                     <!-- Pierre -->
@@ -143,9 +145,59 @@
                 </div>
             </div>
         </section>
-        <section class="modal win">
-            
+        <!-- Modal Win -->
+        <section class="modal-dialog mm-modal win text-center" id="modalWin">
+            Tu as gagné
         </section>
+        <!-- Modal Loose -->
+        <section class="modal-dialog mm-modal loose text-center" id="modalLoose">
+            Tu as perdu
+        </section>
+        <!-- Modal égalité -->
+        <section class="modal-dialog mm-modal egal text-center" id="modalEgal">
+            Égalité
+        </section>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+            Launch static backdrop modal
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
