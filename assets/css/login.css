@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sacramento&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #B8F2E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', 'sans-serif';
+    height: 100vh;
+
+}
+
+/* logoImg */
+
+#logo {
+    max-width: 15vw;
+}
+
+/* container du centre (formulaire) */
+
+.PageLogin {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+}
+
+
+/* input pseudo */
+
+.choosePseudo,.chooseAvatar {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #707070;
+}
+#choosePseudo {
+    margin: 0;
+    font-size: 1rem;
+    line-height: inherit;
+    padding: 3px;
+    text-align: center;
+}
+        
+
+/* choisir avatar */
+
+
+.chooseAvatar label,.choosePseudo label {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#ok {
+    margin-top: 25px;
+}
+
+
+
+#choosePseudo {
+    border: 0.1rem solid #FFA69E;
+    border-radius: 20px;
+}
+
+#woman1,#woman4,#man1 {
+    z-index: 1;
+}
+#woman2,#man2  {
+    z-index: 2;
+}
+#man3{
+    z-index: 3;
+}
+
+.listAvatar {
+    display: flex;
+    margin: 15px auto;
+}
+
+.avatar {
+    display: flex;
+    height: 110px;
+    flex-direction: row;
+    margin: 0px -14px;
+    transition: all 1s ease-in-out 0.2s;
+    widows: 25px 25px 50px 0 rgba(255, 255, 255, 0) inset, -25px -25px 50px 0 rgba(255, 255, 255, 0) inset; 
+}
+
+.avatar:hover {
+    display : flex;
+    height: 140px;
+    flex-direction: row;
+    margin: -20px 10px;
+    transition: all 0.6s;
+    border-radius: 20px;
+}
+
+.avatar.active {
+    display : flex;
+    height: 200px;
+    flex-direction: row;
+    margin: -60px 10px;
+    transition: all 0.6s;
+    border-radius: 20px;
+    z-index: 9 !important;
+}
+
+
+
+
+/* 
+.avatar.inactive {
+    display : flex;
+    height: 130px;
+    flex-direction: row;
+    margin: 0 -16px;
+    transition: all 0.7s;
+    opacity: 0.2;
+}  */
+
+
+/* bouton GO */
+
+#ok {
+    /* font-size : auto; */
+    background-color: #FFA69E;
+    color: #fff;
+    border: 1px solid #d97062;
+    border-radius: 50%;
+    font-weight: 400;
+    height: 5rem;
+    width: 5rem;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 1s;
+    -webkit-box-shadow: 0px 7px 0px #feb3ac;
+    -moz-box-shadow: 0px 7px 0px #feb3ac;
+    box-shadow: 0px 7px 0px #feb3ac;
+}
+
+/* alertes */
+.alert {
+    position: relative;
+    display: none;
+    padding: 6px 15px;
+    margin-bottom: 2px;
+    border-radius: 3.25rem;
+    background-color: #fff3cd;
+    color: #707070;
+    -webkit-box-shadow: 0px 5px 0px #ffffff;
+    -moz-box-shadow: 0px 5px 0px #ffffff;
+    box-shadow: 0px 5px 0px #ffffff;
+    top: -60px;
+}
+
+/* bouton GO  */
+#ok:active {
+    -webkit-box-shadow: 0px 1px 0px #FFA69E;
+    -moz-box-shadow: 0px 1px 0px #FFA69E;
+    box-shadow: 0px 1px 0px #FFA69E;
+}
+
+
+
+/* pour faire tourner les mains */
+
+.img-circle-hands {
+    width: 50%;
+    object-fit: cover;   
+    animation: animate 120s 1 linear; 
+    transition: all 1s;
+}
+
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(260deg);
+    }
+}
+
+
+
+/* ipad */
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+
+    .img-circle-hands {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 768px) {
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.img-circle-hands {
+    width: 170%;
+    object-fit: cover;   
+}
+
+#logo {
+    max-width: 45vw;
+}
+
+/* container du centre (formulaire) */
+
+
+.PageLogin {
+    z-index: 1;
+}
+
+/* input pseudo */
+
+.choosePseudo,.chooseAvatar {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #707070;
+}
+
+.choosePseudo label,.chooseAvatar label {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+#choosePseudo {
+    font-size: 1rem;
+    /* line-height: 2vh; */
+    text-align: center;
+    border: 0.1rem solid #FFA69E;
+    border-radius: 20px;
+}
+
+#ok {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 5px;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+}

@@ -69,20 +69,19 @@ man3.addEventListener('click', function() {
 
 // récupération des pseudos et avatar
 
-
-
-
 var go = document.getElementById('ok');
 
 go.addEventListener('click', function() {
     var choosePseudo = document.getElementById('choosePseudo').value;
+    var alertPseudo = document.querySelector('.alertPseudo');    
     if (choosePseudo == '') {
-        alert('Please remplir le pseudo')    
+        alert('Please renseigner un pseudo')
     } else if (sourceAvatar == '') {
         alert('Please choisir un avatar')
     } else {
         localStorage.setItem('choosePseudo', choosePseudo);
         localStorage.setItem('sourceAvatar', sourceAvatar);
         window.location.href="game.html";
-    }
-})
+    }})
+
+    // alertPseudo.style.display = 'flex';

@@ -18,10 +18,10 @@ body {
 }
 
 a {
-    position: absolute;
-    margin-top: 20vh;
-    z-index:1;
-    display: block;
+   position: absolute;
+   margin-top: 20vh;
+   z-index:1;
+   display: block;
 }
 
 
@@ -31,6 +31,7 @@ a {
    margin-top: 20vh;
    display:block; */
    color: #FFA69E;
+   font-weight: bold;
    font-size: 1rem;
    font-family: montserrat;
    text-decoration: none;
@@ -63,17 +64,17 @@ a:active{
 
 .img-circle-hands:hover {
    animation: animate 60s 1 linear; 
-  }  
+}  
 
 
    
 
 @keyframes animate {
    from {
-       transform: rotate(0deg);
+      transform: rotate(0deg);
    }
    to {
-       transform: rotate(260deg);
+      transform: rotate(260deg);
    }
 }
 
@@ -82,15 +83,15 @@ a:active{
 /* ipad */
 @media screen and (min-width: 800px) and (max-width: 1500px) {
 
-   .img-circle-hands {
-       width: 100%;
-       object-fit: cover;
-       
-   }
+.img-circle-hands {
+   width: 100%;
+   object-fit: cover;
+   
+}
 
-   .logoImg {
-       width: 50%;
-   }
+.logoImg {
+   width: 50%;
+}
    
 }
 
@@ -98,23 +99,23 @@ a:active{
 /* mobile */
 @media screen and (max-width: 800px) {
 
-   .img-circle-hands {
-       width: 80%;
-       object-fit: cover;
-       
-   }
+.img-circle-hands {
+   width: 80%;
+   object-fit: cover;
+   
+}
 
-   .logoImg {
-       width: 50%;
-       margin-top: -3vh;
-   }
+.logoImg {
+   width: 50%;
+   margin-top: -3vh;
+}
 
-   a {
-       margin-top: 12vh;
-       font-size: 10px;
-       padding: 11px 18px;
+a {
+   margin-top: 12vh;
+   font-size: 10px;
+   padding: 11px 18px;
 
-   }
+}
 }
 
 
