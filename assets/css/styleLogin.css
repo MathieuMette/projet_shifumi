@@ -33,20 +33,23 @@ body {
     padding: 2rem;
     z-index: 1;
 }
+
 #logoHeader {
-    height:16vh;
+    height:12vh;
+    margin-top: 4vh;
 }
-
-
 
 /* input pseudo */
 
-
+.choosePseudo,.chooseAvatar {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #707070;
+}
 #choosePseudo {
     margin: 0;
-    /* font-family: inherit;
-    font-size: inherit;
-    line-height: inherit; */
+    font-size: 1rem;
+    line-height: inherit;
     padding: 3px;
     text-align: center;
 }
@@ -57,8 +60,9 @@ body {
 
 .chooseAvatar label,.choosePseudo,#ok {
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
+
 
 #choosePseudo {
     border: 0.1rem solid #FFA69E;
