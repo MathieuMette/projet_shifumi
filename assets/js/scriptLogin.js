@@ -4,7 +4,7 @@ var woman3 = document.querySelector("#woman3");
 var man1 = document.querySelector("#man1");
 var man2 = document.querySelector("#man2");
 var man3 = document.querySelector("#man3");
-var sourceAvatar = ('');
+var sourceAvatar = '';
 
 woman1.addEventListener('click', function() {
     woman1.classList.add('active');
@@ -75,13 +75,14 @@ man3.addEventListener('click', function() {
 var go = document.getElementById('ok');
 
 go.addEventListener('click', function() {
-    console.log('test')
     var choosePseudo = document.getElementById('choosePseudo').value;
     if (choosePseudo == '') {
         alert('Please remplir le pseudo')    
     } else if (sourceAvatar == '') {
         alert('Please choisir un avatar')
     } else {
-        
+        localStorage.setItem('choosePseudo', choosePseudo);
+        localStorage.setItem('sourceAvatar', sourceAvatar);
+        window.location.href="game.html";
     }
 })
