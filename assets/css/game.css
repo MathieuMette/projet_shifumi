@@ -157,10 +157,6 @@ header {
         display: none;
         justify-content: center;
     }
-
-    /* #feuilleUser, #ciseauxComputer {
-        display : flex;
-    } */
         /* Partie User */
         #feuilleUser>img, #pierreUser>img, #ciseauxUser>img {
             transform: rotate(90deg);

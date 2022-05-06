@@ -19,8 +19,8 @@ var cisorComputer = document.getElementById('cisorComputer');
 var ciseauxComputer = document.getElementById('ciseauxComputer')
 // Modal
 var modalWin = document.getElementById('staticBackdropWin');
-var modalLoose = document.getElementById('staticBackdropLoose')
-var modalEgal = document.getElementById('staticBackdropEgal')
+var modalLoose = document.getElementById('staticBackdropLoose');
+var modalEgal = document.getElementById('staticBackdropEgal');
 
 scoreUser.innerHTML = compteurUser;
 scoreComputer.innerHTML = compteurComputer;
@@ -61,15 +61,63 @@ sheetUser.addEventListener('click', function(){
     }
     // Choix gagnant
     if (choixOrdiName == 'Ciseaux') {
-        // modalLoose.classList.add('show');
+        $('#staticBackdropLoose').modal('show');
         compteurComputer++;
         scoreComputer.innerHTML = compteurComputer;
+        var closeButtonLoose = document.querySelector('#closeButtonLoose');
+        closeButtonLoose.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
     } else if (choixOrdiName == 'Pierre') { 
-        // modalWin.classList.add('show');
+        modalWin.classList.add('show');
         compteurUser++;
         scoreUser.innerHTML = compteurUser;
+                var closeButtonWin = document.querySelector('#closeButtonWin');
+        closeButtonWin.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
     } else { 
-        // modalEgal.classList.add('show');
+        $('#staticBackdropEgal').modal('show');
+                var closeButtonEgal = document.querySelector('#closeButtonEgal');
+        closeButtonEgal.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
     }
 })
 // Pierre
@@ -108,15 +156,63 @@ stoneUser.addEventListener('click', function(){
     }
     // Choix gagnant
     if (choixOrdiName == 'Feuille') {
-        modalLoose.style.visibility = 'visible';
+        $('#staticBackdropLoose').modal('show');
         compteurComputer++;
         scoreComputer.innerHTML = compteurComputer;
+        var closeButtonLoose = document.querySelector('#closeButtonLoose');
+        closeButtonLoose.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
     } else if (choixOrdiName == 'Ciseaux') { 
-        modalWin.style.visibility = 'visible';
+        $('#staticBackdropWin').modal('show');
         compteurUser++;
         scoreUser.innerHTML = compteurUser;
+                var closeButtonWin = document.querySelector('#closeButtonWin');
+        closeButtonWin.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
     } else { 
-        modalEgal.style.visibility = 'visible';
+        $('#staticBackdropEgal').modal('show');
+                var closeButtonEgal = document.querySelector('#closeButtonEgal');
+        closeButtonEgal.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
     }
 })
 // Ciseaux
@@ -156,17 +252,69 @@ cisorUser.addEventListener('click', function(){
     };
     // Choix gagnant
     if (choixOrdiName == 'Pierre') {
-        modalLoose.style.visibility = 'visible';
+        console.log($('#staticBackdropLoose'));
+        $('#staticBackdropLoose').modal('show');
         compteurComputer++;
         scoreComputer.innerHTML = compteurComputer;
+        var closeButtonLoose = document.querySelector('#closeButtonLoose');
+        closeButtonLoose.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
+
     } else if (choixOrdiName == 'Feuille') { 
-        modalWin.style.visibility = 'visible';
+        $('#staticBackdropWin').modal('show');
         compteurUser++;
         scoreUser.innerHTML = compteurUser;
+        var closeButtonWin = document.querySelector('#closeButtonWin');
+        closeButtonWin.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
     } else { 
-        modalEgal.style.visibility = 'visible';
+        $('#staticBackdropEgal').modal('show');
+        var closeButtonEgal = document.querySelector('#closeButtonEgal');
+        closeButtonEgal.addEventListener('click', function() { 
+            console.log('fermeture modal');
+            stoneUser.style.opacity = 1;
+            sheetUser.style.opacity = 1;
+            cisorUser.style.opacity = 1;
+            feuilleUser.style.display = 'none';
+            pierreUser.style.display = 'none';
+            ciseauxUser.style.display = 'none';
+            stoneComputer.style.opacity = 1;
+            sheetComputer.style.opacity = 1;
+            cisorComputer.style.opacity = 1;
+            feuilleComputer.style.display = 'none';
+            pierreComputer.style.display = 'none';
+            ciseauxComputer.style.display = 'none';
+        })
+
     }
 })
+
 
 
 
