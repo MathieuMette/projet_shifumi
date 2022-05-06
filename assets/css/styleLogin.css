@@ -74,7 +74,7 @@ body {
     display : flex;
     height: 130px;
     flex-direction: row;
-    margin: 0 -18px;
+    margin: 0 -16px;
     transition: all 0.7s;
 }
 
@@ -82,7 +82,7 @@ body {
     display : flex;
     height: 150px;
     flex-direction: row;
-    margin: -10px 18px;
+    margin: -10px 16px;
     transition: all 0.7s;
 }
 
@@ -90,23 +90,25 @@ body {
     display : flex;
     height: 150px;
     flex-direction: row;
-    margin: -10px 18px;
+    margin: -10px 16px;
     transition: all 0.7s;
 }
+
+
 .avatar.inactive {
     display : flex;
     height: 130px;
     flex-direction: row;
-    margin: 0 -18px;
+    margin: 0 -16px;
     transition: all 0.7s;
     opacity: 0.2;
-}
+} 
 
 
 /* bouton GO */
 
 #ok {
-    font-size : auto;
+    /* font-size : auto; */
     background-color: #FFA69E;
     color: #fff;
     border: 0px solid #fff;
@@ -122,7 +124,7 @@ body {
     box-shadow: 0px 9px 0px #ffffff;
 }
 
-#ok:active{
+#ok:active {
     -webkit-box-shadow: 0px 2px 0px #FFA69E;
     -moz-box-shadow: 0px 2px 0px #FFA69E;
     box-shadow: 0px 2px 0px #FFA69E;
@@ -158,13 +160,10 @@ body {
     .img-circle-hands {
         width: 100%;
         object-fit: cover;
-        
     }
-
     .logoImg {
         width: 50%;
     }
-    
 }
 
 
@@ -173,8 +172,7 @@ body {
 
     .img-circle-hands {
         width: 80%;
-        object-fit: cover;
-        
+        object-fit: cover;   
     }
 
     .logoImg {
@@ -186,6 +184,5 @@ body {
         margin-top: 12vh;
         font-size: 10px;
         padding: 11px 18px;
-
     }
 }
