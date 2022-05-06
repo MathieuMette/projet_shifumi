@@ -1,3 +1,12 @@
+// REcupération donnée page Login
+var nameUser = document.getElementById('nameUser');
+var imgAvatarUser = document.getElementById('imgAvatarUser');
+var pseudo = localStorage.getItem('choosePseudo');
+var avatar = localStorage.getItem('sourceAvatar');
+nameUser.innerHTML = pseudo;
+imgAvatarUser.src = avatar;
+
+
 // Score Bar
 var scoreUser = document.getElementById('scoreUser');
 var scoreComputer = document.getElementById('scoreComputer');
