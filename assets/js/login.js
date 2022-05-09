@@ -74,14 +74,23 @@ var go = document.getElementById('ok');
 go.addEventListener('click', function() {
     var choosePseudo = document.getElementById('choosePseudo').value;
     var alertPseudo = document.querySelector('.alertPseudo');    
+    var alertAvatar = document.querySelector('.alertAvatar');    
+    var clickEndPseudo = document.querySelector('.btnPseudo');
+    var clickEndAvatar = document.querySelector('.btnAvatar');
     if (choosePseudo == '') {
-        alert('Tu n\'as pas renseigner de pseudo')
+        //alerte Pseudo
+        alertPseudo.style.display = 'flex';
+        clickEndPseudo.addEventListener('click', function() {
+            alertPseudo.style.display = 'none';
+        })
     } else if (sourceAvatar == '') {
-        alert('Penses à choisir un avatar')
+        //alerte Avatar
+        alertAvatar.style.display = 'flex';
+        clickEndAvatar.addEventListener('click', function() {
+            alertAvatar.style.display = 'none';
+        })
     } else {
         localStorage.setItem('choosePseudo', choosePseudo);
         localStorage.setItem('sourceAvatar', sourceAvatar);
         window.location.href="game.html";
     }})
-
-    // alertPseudo.style.display = 'flex';

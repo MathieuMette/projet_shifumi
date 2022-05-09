@@ -28,7 +28,7 @@ body {
 .accordion-body {
     position: absolute;
     left: 0;
-    horizontal-align: middle;
+    /* horizontal-align: middle; */
     border: solid #ffa69e;
     border-radius: 10px;
     z-index: 99;
@@ -252,17 +252,21 @@ button.accordion-button.collapsed:active {
 }
 
 /* alertes */
-.alert {
+
+
+.alertPseudo,.alertAvatar {
     position: relative;
+    z-index: 10;
     display: none;
     padding: 6px 15px;
     margin-bottom: 2px;
+    border: 1px solid #fee48f;
     border-radius: 3.25rem;
     background-color: #fff3cd;
     color: #707070;
-    -webkit-box-shadow: 0px 5px 0px #ffffff;
-    -moz-box-shadow: 0px 5px 0px #ffffff;
-    box-shadow: 0px 5px 0px #ffffff;
+    -webkit-box-shadow: 0px 7px 0px #ffffff;
+    -moz-box-shadow: 0px 7px 0px #ffffff;
+    box-shadow: 0px 7px 0px #ffffff;
     top: -60px;
 }
 
@@ -293,9 +297,10 @@ button.accordion-button.collapsed:active {
 @media screen and (min-width: 768px) and (max-width: 1500px) {
 
     .img-circle-hands {
-        width: 100%;
+        width: 120%;
         object-fit: cover;
     }
+    
 }
 
 
