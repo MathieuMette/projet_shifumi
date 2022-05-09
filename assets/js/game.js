@@ -75,7 +75,7 @@ sheetUser.addEventListener('click', function(){
         scoreComputer.innerHTML = compteurComputer;
         var closeButtonLoose = document.querySelector('#closeButtonLoose');
         closeButtonLoose.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -95,7 +95,7 @@ sheetUser.addEventListener('click', function(){
         scoreUser.innerHTML = compteurUser;
         var closeButtonWin = document.querySelector('#closeButtonWin');
         closeButtonWin.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -113,7 +113,7 @@ sheetUser.addEventListener('click', function(){
         $('#staticBackdropEgal').modal('show');
                 var closeButtonEgal = document.querySelector('#closeButtonEgal');
         closeButtonEgal.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -170,7 +170,7 @@ stoneUser.addEventListener('click', function(){
         scoreComputer.innerHTML = compteurComputer;
         var closeButtonLoose = document.querySelector('#closeButtonLoose');
         closeButtonLoose.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -190,7 +190,7 @@ stoneUser.addEventListener('click', function(){
         scoreUser.innerHTML = compteurUser;
                 var closeButtonWin = document.querySelector('#closeButtonWin');
         closeButtonWin.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -208,7 +208,7 @@ stoneUser.addEventListener('click', function(){
         $('#staticBackdropEgal').modal('show');
                 var closeButtonEgal = document.querySelector('#closeButtonEgal');
         closeButtonEgal.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -267,7 +267,7 @@ cisorUser.addEventListener('click', function(){
         scoreComputer.innerHTML = compteurComputer;
         var closeButtonLoose = document.querySelector('#closeButtonLoose');
         closeButtonLoose.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -288,7 +288,7 @@ cisorUser.addEventListener('click', function(){
         scoreUser.innerHTML = compteurUser;
         var closeButtonWin = document.querySelector('#closeButtonWin');
         closeButtonWin.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -306,7 +306,7 @@ cisorUser.addEventListener('click', function(){
         $('#staticBackdropEgal').modal('show');
         var closeButtonEgal = document.querySelector('#closeButtonEgal');
         closeButtonEgal.addEventListener('click', function() { 
-            console.log('fermeture modal');
+            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
