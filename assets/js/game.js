@@ -6,7 +6,6 @@ var avatar = localStorage.getItem('sourceAvatar');
 nameUser.innerHTML = pseudo;
 imgAvatarUser.src = avatar;
 
-
 // Score Bar
 var scoreUser = document.getElementById('scoreUser');
 var scoreComputer = document.getElementById('scoreComputer');
@@ -31,8 +30,24 @@ var modalWin = document.getElementById('staticBackdropWin');
 var modalLoose = document.getElementById('staticBackdropLoose');
 var modalEgal = document.getElementById('staticBackdropEgal');
 
+// Initailisation du score sur la page
 scoreUser.innerHTML = compteurUser;
 scoreComputer.innerHTML = compteurComputer;
+
+// function raz () { 
+//     stoneUser.style.opacity = 1;
+//     sheetUser.style.opacity = 1;
+//     cisorUser.style.opacity = 1;
+//     feuilleUser.style.display = 'none';
+//     pierreUser.style.display = 'none';
+//     ciseauxUser.style.display = 'none';
+//     stoneComputer.style.opacity = 1;
+//     sheetComputer.style.opacity = 1;
+//     cisorComputer.style.opacity = 1;
+//     feuilleComputer.style.display = 'none';
+//     pierreComputer.style.display = 'none';
+//     ciseauxComputer.style.display = 'none';
+// }
 
 // papier
 sheetUser.addEventListener('click', function(){
@@ -75,7 +90,6 @@ sheetUser.addEventListener('click', function(){
         scoreComputer.innerHTML = compteurComputer;
         var closeButtonLoose = document.querySelector('#closeButtonLoose');
         closeButtonLoose.addEventListener('click', function() { 
-            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -95,7 +109,6 @@ sheetUser.addEventListener('click', function(){
         scoreUser.innerHTML = compteurUser;
         var closeButtonWin = document.querySelector('#closeButtonWin');
         closeButtonWin.addEventListener('click', function() { 
-            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -111,9 +124,8 @@ sheetUser.addEventListener('click', function(){
         })
     } else { 
         $('#staticBackdropEgal').modal('show');
-                var closeButtonEgal = document.querySelector('#closeButtonEgal');
+        var closeButtonEgal = document.querySelector('#closeButtonEgal');
         closeButtonEgal.addEventListener('click', function() { 
-            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -267,7 +279,6 @@ cisorUser.addEventListener('click', function(){
         scoreComputer.innerHTML = compteurComputer;
         var closeButtonLoose = document.querySelector('#closeButtonLoose');
         closeButtonLoose.addEventListener('click', function() { 
-            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -288,7 +299,6 @@ cisorUser.addEventListener('click', function(){
         scoreUser.innerHTML = compteurUser;
         var closeButtonWin = document.querySelector('#closeButtonWin');
         closeButtonWin.addEventListener('click', function() { 
-            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
@@ -306,7 +316,6 @@ cisorUser.addEventListener('click', function(){
         $('#staticBackdropEgal').modal('show');
         var closeButtonEgal = document.querySelector('#closeButtonEgal');
         closeButtonEgal.addEventListener('click', function() { 
-            
             stoneUser.style.opacity = 1;
             sheetUser.style.opacity = 1;
             cisorUser.style.opacity = 1;
