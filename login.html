@@ -22,6 +22,24 @@
         <div>
             <a href="index.html"><img src="assets/img/logo_shifumi.png" class="img-fluid" id="logo"></a>
         </div>
+        
+        <!-- règles du jeu -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-itemn accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                REGLES DU JEU 
+                </button>
+            </div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">L’objectif du jeu est simple, il faut affronter un autre joueur en utilisant l’une des trois "armes" : la pierre, la feuille ou les ciseaux.</p>
+                    <p>Lorsque le joueur clique sur la feuille, la pierre ou les ciseaux, l'IA déclanche aléatoirement la feuille, la pierre ou les ciseaux.</p>
+                    <p>Celui qui possède la meilleure combinaison marque 1 point. </p>
+                    <p>Voici les rapports de force entre les symboles : </p>
+                    <p>La pierre gagne face aux ciseaux. Elle les broie.<br>Les ciseaux l’emportent face à la feuille qu’ils coupent.<br>La feuille bat la pierre en l’enveloppant.</p>
+                    <p>Si les deux joueurs cliquent sur le même symbole, ils alors ex-æquo et ne marquent auncun point.</p>
+                </div>
+            </div>
+        </div>
         <div class="choosePseudo">
             <label for="pseudo">CHOISISSEZ VOTRE PSEUDO</label>
         </div>
@@ -41,10 +59,12 @@
         <div>
             <button id="ok">GO !</button>
         </div>
-        <div class="alert alertPseudo align-items-center">MERCI DE RENSEIGNER UN PSEUDO
+        <div class="alert alertPseudo align-items-center" role="alert">MERCI DE RENSEIGNER UN PSEUDO
         </div>
-        <div class="alert alertAvatar align-items-center">MERCI DE CHOISIR UN AVATAR
+        <div class="alert alertAvatar align-items-center"role="alert">MERCI DE CHOISIR UN AVATAR
         </div>
+
+
     
 <!-- JS -->
         <!-- Bootstrap -->
