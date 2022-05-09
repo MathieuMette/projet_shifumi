@@ -75,9 +75,9 @@ go.addEventListener('click', function() {
     var choosePseudo = document.getElementById('choosePseudo').value;
     var alertPseudo = document.querySelector('.alertPseudo');    
     if (choosePseudo == '') {
-        alert('Please renseigner un pseudo')
+        alert('Tu n\'as pas renseigner de pseudo')
     } else if (sourceAvatar == '') {
-        alert('Please choisir un avatar')
+        alert('Penses à choisir un avatar')
     } else {
         localStorage.setItem('choosePseudo', choosePseudo);
         localStorage.setItem('sourceAvatar', sourceAvatar);
